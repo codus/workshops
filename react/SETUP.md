@@ -1,3 +1,4 @@
+[⇦ Página inicial](./README.md)
 # Setup
 
 ## 1) Instalando Node.js
