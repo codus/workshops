@@ -52,4 +52,4 @@ Para seguir em frente, é recomendado refatorar sua aplicação seguindo a [ment
 - Salvar tarefas no LocalStorage
 - Sincronizar as tarefas com requisições para um servidor (Mock ou não)
 - Configurar tarefas para adicionar todo dia.
-- Exportar como TXT, CSV, VCard, XML, JSON
+- Exportar como TXT, CSV, XML, JSON
