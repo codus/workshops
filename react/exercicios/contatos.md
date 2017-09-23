@@ -58,11 +58,11 @@ Depois de adicionar muitos contatos, você percebe que seria legal poder ver as 
 		email: 'fulano-82@gmail.com'
 	},
 	{
-    nome: 'Beltrano da Cunha',
+		nome: 'Beltrano da Cunha',
 		telefone: '(11) 3685-6947',
 		endereco: 'Rua dos Clerigos, 24',
 		email: 'beltranocunha@hotmail.com'
-	},
+	}
 ]
 ```
 
