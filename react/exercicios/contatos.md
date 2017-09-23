@@ -20,7 +20,7 @@ Supondo que você receba um JSON com um Array de contatos, o objetivo é consegu
 ### Desafios
 
 #### Usando Estado e Ciclo de Vida
-Tente salvar os Dados no estado do Componente de lista quando ele for montado.
+Para complementar, guarde o Array de contatos no estado do componente. Como sugestão, você pode fazer isso usando o construtor do seu componente.
 
 **Conceitos envolvidos**
 - [Estado e Ciclo de Vida](https://facebook.github.io/react/docs/state-and-lifecycle.html)
