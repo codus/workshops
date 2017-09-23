@@ -9,3 +9,10 @@ Siga [o tutorial](./SETUP.md)
 * [Lista de Contatos](./exercicios/contatos.md)
 * [TODO List](./exercicios/lista-de-tarefas.md)
 
+## Projetos Adicionais
+* Snake
+* Tetris
+* Dino Runner (joguinho do Chrome)
+* Jogo de cartas integrando com [uma API](https://deckofcardsapi.com/)
+* Game of Life
+* Gerador de Memes (Imagem de fundo, texto em cima, texto em baixo)
