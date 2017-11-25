@@ -4,8 +4,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Vue.js • TodoMVC</title>
-		<link rel="stylesheet" href="node_modules/todomvc-common/base.css">
-		<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
+		<link rel="stylesheet" href="/node_modules/todomvc-common/base.css">
+		<link rel="stylesheet" href="/node_modules/todomvc-app-css/index.css">
 		<style> [v-cloak] { display: none; } </style>
 	</head>
 	<body>
@@ -54,5 +54,12 @@
 		<script src="js/store.js"></script>
 		<script src="js/app.js"></script>
 		<script src="js/routes.js"></script>
+		<script>
+			if ('serviceWorker' in navigator) {
+				navigator.serviceWorker
+					.register('sw.js')
+					.then(function () { console.log("Service Worker Registered"); });
+			}
+		</script>
 	</body>
 </html>
