@@ -1,0 +1,38 @@
+{
+  "name": "Whatsapp clone",
+  "short_name": "Whatsapp clone",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Another todo list",
+  "theme_color": "black",
+  "icons": [{
+    "src": "https://image.freepik.com/free-icon/whatsapp-logo_318-49685.jpg",
+    "sizes": "48x48",
+    "type": "image/png"
+  }, {
+    "src": "https://image.freepik.com/free-icon/whatsapp-logo_318-49685.jpg",
+    "sizes": "72x72",
+    "type": "image/png"
+  }, {
+    "src": "https://image.freepik.com/free-icon/whatsapp-logo_318-49685.jpg",
+    "sizes": "96x96",
+    "type": "image/png"
+  }, {
+    "src": "https://image.freepik.com/free-icon/whatsapp-logo_318-49685.jpg",
+    "sizes": "144x144",
+    "type": "image/png"
+  }, {
+    "src": "https://image.freepik.com/free-icon/whatsapp-logo_318-49685.jpg",
+    "sizes": "168x168",
+    "type": "image/png"
+  }, {
+    "src": "https://image.freepik.com/free-icon/whatsapp-logo_318-49685.jpg",
+    "sizes": "192x192",
+    "type": "image/png"
+  }, {
+    "src": "https://image.freepik.com/free-icon/whatsapp-logo_318-49685.jpg",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}
