@@ -20,8 +20,6 @@
 		}
 	};
 
-	Vue.use(VueResource);
-
 	exports.app = new Vue({
 
 		// the root element that will be compiled
