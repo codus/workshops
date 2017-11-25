@@ -5,7 +5,7 @@
   "display": "standalone",
   "background_color": "#fff",
   "description": "Another todo list",
-  "theme_color": "black",
+  "theme_color": "#000000",
   "icons": [{
     "src": "https://image.freepik.com/free-icon/whatsapp-logo_318-49685.jpg",
     "sizes": "48x48",
