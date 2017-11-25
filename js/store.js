@@ -8,7 +8,9 @@
 
 	exports.todoStorage = {
 		fetch: function () {
-			return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+			return axios.get('https://4b6aadd7.ngrok.io/todos').then((response) => {
+				return response.data;
+			});
 		},
 		save: function (todos) {
 			localStorage.setItem(STORAGE_KEY, JSON.stringify(todos));

@@ -27,12 +27,17 @@
 
 		// app initial state
 		data: {
-			todos: todoStorage.fetch(),
+			todos: [],
 			newTodo: '',
 			editedTodo: null,
 			visibility: 'all'
 		},
-
+		mounted: function() {
+			todoStorage.fetch().then((todos) => {
+				this.todos = todos;
+				console.log(this.todos);
+			})
+		},
 		// watch todos change for localStorage persistence
 		watch: {
 			todos: {
