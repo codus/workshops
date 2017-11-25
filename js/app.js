@@ -60,7 +60,9 @@
 				}
 			}
 		},
-
+		mounted: function() {
+			this.sync();
+		},
 		// methods that implement data logic.
 		// note there's no DOM manipulation here at all.
 		methods: {
@@ -109,9 +111,19 @@
 			},
 
 			sync: function () {
-				todoStorage.fetch().filter((todo) => todo.pendingOnlineCreation).forEach(({ title, completed }) => {
-					axios.post('https://4b6aadd7.ngrok.io/todos', { title, completed });
-
+				Promise.all(
+					todoStorage
+						.fetch()
+						.filter((todo) => todo.pendingOnlineCreation)
+						.map(({ title, completed }) => {
+							return axios.post(
+								'https://4b6aadd7.ngrok.io/todos', { title, completed }
+							);
+						})
+				).then(() => {
+					axios.get('https://4b6aadd7.ngrok.io/todos').then(({ data }) => {
+						this.todos = data
+					});
 				});
 			}
 		},
