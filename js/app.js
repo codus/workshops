@@ -27,16 +27,10 @@
 
 		// app initial state
 		data: {
-			todos: [],
+			todos: todoStorage.fetch(),
 			newTodo: '',
 			editedTodo: null,
 			visibility: 'all'
-		},
-		mounted: function() {
-			todoStorage.fetch().then((todos) => {
-				this.todos = todos;
-				console.log(this.todos);
-			})
 		},
 		// watch todos change for localStorage persistence
 		watch: {
@@ -80,7 +74,7 @@
 				if (!value) {
 					return;
 				}
-				this.todos.push({ id: this.todos.length + 1, title: value, completed: false });
+				this.todos.push({ title: value, completed: false, pendingOnlineCreation: true });
 				this.newTodo = '';
 			},
 
@@ -112,6 +106,13 @@
 
 			removeCompleted: function () {
 				this.todos = filters.active(this.todos);
+			},
+
+			sync: function () {
+				todoStorage.fetch().filter((todo) => todo.pendingOnlineCreation).forEach(({ title, completed }) => {
+					axios.post('https://4b6aadd7.ngrok.io/todos', { title, completed });
+
+				});
 			}
 		},
 
